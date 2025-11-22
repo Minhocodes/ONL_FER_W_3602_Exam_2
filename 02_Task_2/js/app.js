@@ -49,3 +49,23 @@ const users = [
 /**
  * Write your code below!
  */
+
+const parseUserData = (data) => {
+  return data
+    
+    .filter((user) => user.language === "French")
+
+    
+    .map(({ id, firstName, lastName, email, nin }) => ({
+      id,
+      fullName: `${firstName} ${lastName}`,
+      email,
+      nin,
+    }))
+
+    
+    .sort((a, b) => Number(a.nin) - Number(b.nin));
+};
+
+
+console.log(parseUserData(users));
