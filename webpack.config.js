@@ -1,7 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 
-const entryPath = "02_Task_2";
+const entryPath = "04_Task_4";
 
 module.exports = {
   mode: "none",
